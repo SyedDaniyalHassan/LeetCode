@@ -7,7 +7,6 @@ public:
         int it2 = 0;
         int limi_1 = nums1.size();
         int limi_2 = nums2.size();
-        cout<<"SZIE x" <<limi_1<<"  Size y "<<limi_2<<endl;
         while(it1!=limi_1 || it2!=limi_2)
         {
             if(it1!=limi_1 and it2!=limi_2)
