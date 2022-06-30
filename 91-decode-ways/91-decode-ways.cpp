@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numDecodings(string s) {
-        int dp[100][2];
+        int dp[s.length()][2];
         dp[0][0] = s[0] == '0' ? 0 : 1;
         dp[0][1] = 0;
         int n = s.size();
