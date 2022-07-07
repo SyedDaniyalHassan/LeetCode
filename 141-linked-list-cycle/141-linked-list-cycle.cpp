@@ -9,17 +9,16 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        auto *temp = head;
         bool b=false;
-        while(temp !=nullptr)
+        while(head !=nullptr)
         {
-            if(temp->val == -2999)
+            if(head->val == -2999)
             {
                 b = true;
                 break;
             }
-            temp->val = -2999;
-            temp = temp->next;
+            head->val = -2999;
+            head = head->next;
         }
         
         return b;
