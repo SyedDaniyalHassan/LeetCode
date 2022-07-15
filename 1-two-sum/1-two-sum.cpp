@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, vector<int>> umap;
+        unordered_map<int, int> umap;
          vector<int> ret;
         for (int i=0 ;i<nums.size();++i)
         {
@@ -10,12 +10,12 @@ public:
             {
                
                 ret.push_back(i);
-                ret.push_back(umap[sub][0]);
+                ret.push_back(umap[sub]);
                 break;
             }
             else
             {
-                umap[nums[i]].push_back(i);
+                umap[nums[i]] = i;
             }
         }
         return ret;
