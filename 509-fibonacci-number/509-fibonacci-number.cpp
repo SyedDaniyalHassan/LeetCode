@@ -3,14 +3,10 @@ public:
     int fib(int n) {
         int m = n+1;
         int arr[m];
-        if(n==0)
+        if(n<2)
         {
-            return 0;
+            return n;
             
-        }
-        if(n==1)
-        {
-            return 1;
         }
         arr[0] = 0;
         arr[1] = 1;
